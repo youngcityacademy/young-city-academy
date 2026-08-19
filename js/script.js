@@ -9,6 +9,52 @@ if (menuToggle && navLinks) {
     });
 }
 
+// Accordion functionality for match categories
+const accordionButtons = document.querySelectorAll('.accordion-button');
+accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        const content = document.getElementById(category);
+        
+        // Toggle active state
+        button.classList.toggle('active');
+        content.classList.toggle('active');
+        
+        // Close other accordions
+        accordionButtons.forEach(otherButton => {
+            if (otherButton !== button) {
+                const otherCategory = otherButton.getAttribute('data-category');
+                const otherContent = document.getElementById(otherCategory);
+                otherButton.classList.remove('active');
+                otherContent.classList.remove('active');
+            }
+        });
+    });
+});
+
+// Accordion functionality for team categories
+const teamAccordionButtons = document.querySelectorAll('.team-accordion-button');
+teamAccordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const team = button.getAttribute('data-team');
+        const content = document.getElementById(team);
+        
+        // Toggle active state
+        button.classList.toggle('active');
+        content.classList.toggle('active');
+        
+        // Close other accordions
+        teamAccordionButtons.forEach(otherButton => {
+            if (otherButton !== button) {
+                const otherTeam = otherButton.getAttribute('data-team');
+                const otherContent = document.getElementById(otherTeam);
+                otherButton.classList.remove('active');
+                otherContent.classList.remove('active');
+            }
+        });
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.add('js-enabled');
 
