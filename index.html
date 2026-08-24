@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="NITCo0eZs07eHHK-HEKWhjItGPiUtfrsUAQRAXgMXPc" />
     <title>Young City Academy</title>
+    <meta name="description" content="Young City Academy — youth soccer development in Nairobi since 2010. Skill training, teamwork and healthy habits for U9 to U15 players.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-    <img src="images/LOGO.jpg" alt="Young City Academy">
-</div>
+                <img src="images/LOGO.jpg" alt="Young City Academy crest">
+                <span class="logo-text">Young City</span>
+            </div>
             <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span></span><span></span><span></span>
             </button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#category">Teams</a></li>
+                <li><a href="#competitions">FKF</a></li>
                 <li><a href="results.html">Results</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,9 +32,9 @@
     <main>
         <section class="hero" id="home">
             <div class="hero-content">
-                <p class="eyebrow">Elite youth soccer development</p>
+                <p class="eyebrow">Est. 2010 · Nairobi, Kenya</p>
                 <h1>Young City Academy</h1>
-                <p>Developing tomorrow's champions with skill, discipline, and sportsmanship since 2010.</p>
+                <p>Developing tomorrow's champions with skill, discipline, and sportsmanship — one training session at a time.</p>
                 <div class="buttons">
                     <a href="#contact" class="btn">Join the Academy</a>
                     <a href="#about" class="btn btn-outline">Learn More</a>
@@ -41,41 +42,247 @@
             </div>
         </section>
 
-        <section class="info-section" id="about">
-            <div class="section-heading">
+        <div class="ticker" aria-label="Latest results">
+            <div class="ticker-track">
+                <span>LATEST &nbsp;<b>U11</b> 9–1 FC Kaizen</span>
+                <span><b>U13</b> 4–0 Kick to Victory</span>
+                <span><b>U9</b> 4–0 Rongai Soccer</span>
+                <span>FKF ZONE A &nbsp;<b>7 PTS</b> from 3 played</span>
+                <span>U13 NAICUP &nbsp;<b>CHAMPIONS</b></span>
+                <span>LATEST &nbsp;<b>U11</b> 9–1 FC Kaizen</span>
+                <span><b>U13</b> 4–0 Kick to Victory</span>
+                <span><b>U9</b> 4–0 Rongai Soccer</span>
+                <span>FKF ZONE A &nbsp;<b>7 PTS</b> from 3 played</span>
+                <span>U13 NAICUP &nbsp;<b>CHAMPIONS</b></span>
+            </div>
+        </div>
+
+        <section class="block about" id="about">
+            <div class="wrap section-heading">
+                <span class="section-tag">Why Young City</span>
                 <h2>About Us</h2>
                 <p>We prepare young athletes for success on and off the field with coaching, training, and community support.</p>
             </div>
             <div class="info-grid">
-                <div class="info-card"><h3>Skill Training</h3><p>Focused technical coaching for every player, from ball control to tactical awareness.</p></div>
-                <div class="info-card"><h3>Teamwork</h3><p>Players learn communication, leadership, and respect while competing with pride.</p></div>
-                <div class="info-card"><h3>Healthy Habits</h3><p>We support fitness, nutrition, and positive habits that build lifelong confidence.</p></div>
-                <div class="info-card"><h3>Head Coach</h3><p>Led by Dickson Amiugasha, our head coach brings experience, strategy, and inspiration to every training session.</p></div>
+                <div class="info-card">
+                    <div class="info-badge">S</div>
+                    <h3>Skill Training</h3>
+                    <p>Focused technical coaching for every player, from ball control to tactical awareness.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-badge">T</div>
+                    <h3>Teamwork</h3>
+                    <p>Players learn communication, leadership, and respect while competing with pride.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-badge">H</div>
+                    <h3>Healthy Habits</h3>
+                    <p>We support fitness, nutrition, and positive habits that build lifelong confidence.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-badge">C</div>
+                    <h3>Head Coach</h3>
+                    <p>Led by Dickson Amiugasha, our head coach brings experience, strategy, and inspiration to every training session.</p>
+                </div>
             </div>
         </section>
 
-        <section class="teams-section" id="category">
-            <div class="section-heading"><h2>Categories</h2><p>Age-based squads and development groups for boys and girls across all levels.</p></div>
+        <div class="wrap"><div class="touchline"></div></div>
+
+        <section class="block teams" id="category">
+            <div class="wrap section-heading">
+                <span class="section-tag">Age Groups</span>
+                <h2>Categories</h2>
+                <p>Age-based squads and development groups for boys and girls across all levels.</p>
+            </div>
             <div class="team-grid">
-                <div class="team-accordion"><button class="team-accordion-button" data-team="u15"><h3>Under 15</h3><span class="accordion-icon">▼</span></button><div class="team-accordion-content" id="u15"><p>Training for players developing stronger skills and tactical awareness.</p><ul class="team-details"><li>Advanced technical training</li><li>Tactical positioning &amp; strategy</li><li>Competition preparation</li><li>Leadership development</li></ul></div></div>
-                <div class="team-accordion"><button class="team-accordion-button" data-team="u13"><h3>Under 13</h3><span class="accordion-icon">▼</span></button><div class="team-accordion-content" id="u13"><p>Focused development with more structured sessions for growing athletes.</p><ul class="team-details"><li>Intermediate skill progression</li><li>Match fitness training</li><li>Team coordination exercises</li><li>Youth tournament participation</li></ul></div></div>
-                <div class="team-accordion"><button class="team-accordion-button" data-team="u11"><h3>Under 11</h3><span class="accordion-icon">▼</span></button><div class="team-accordion-content" id="u11"><p>Fun, skill-building practices for players building confidence on the field.</p><ul class="team-details"><li>Fundamental skill development</li><li>Ball control &amp; passing</li><li>Fun-focused training</li><li>Building player confidence</li></ul></div></div>
-                <div class="team-accordion"><button class="team-accordion-button" data-team="u9"><h3>Under 9</h3><span class="accordion-icon">▼</span></button><div class="team-accordion-content" id="u9"><p>Early introduction to soccer fundamentals, teamwork, and play.</p><ul class="team-details"><li>Introduction to soccer basics</li><li>Ball awareness &amp; handling</li><li>Teamwork introduction</li><li>Fun &amp; enjoyment first</li></ul></div></div>
+
+                <div class="team-accordion">
+                    <button class="team-accordion-button" data-team="u15" aria-expanded="false">
+                        <span class="jersey-number">15</span>
+                        <span class="team-heading">
+                            <h3>Under 15</h3>
+                            <span class="team-sub">Advanced technical training</span>
+                        </span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="team-accordion-content" id="u15">
+                        <p>Training for players developing stronger skills and tactical awareness.</p>
+                        <ul class="team-details">
+                            <li>Advanced technical training</li>
+                            <li>Tactical positioning &amp; strategy</li>
+                            <li>Competition preparation</li>
+                            <li>Leadership development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-accordion">
+                    <button class="team-accordion-button" data-team="u13" aria-expanded="false">
+                        <span class="jersey-number">13</span>
+                        <span class="team-heading">
+                            <h3>Under 13</h3>
+                            <span class="team-sub">Intermediate skill progression</span>
+                        </span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="team-accordion-content" id="u13">
+                        <p>Focused development with more structured sessions for growing athletes.</p>
+                        <ul class="team-details">
+                            <li>Intermediate skill progression</li>
+                            <li>Match fitness training</li>
+                            <li>Team coordination exercises</li>
+                            <li>Youth tournament participation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-accordion">
+                    <button class="team-accordion-button" data-team="u11" aria-expanded="false">
+                        <span class="jersey-number">11</span>
+                        <span class="team-heading">
+                            <h3>Under 11</h3>
+                            <span class="team-sub">Fundamental skill development</span>
+                        </span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="team-accordion-content" id="u11">
+                        <p>Fun, skill-building practices for players building confidence on the field.</p>
+                        <ul class="team-details">
+                            <li>Fundamental skill development</li>
+                            <li>Ball control &amp; passing</li>
+                            <li>Fun-focused training</li>
+                            <li>Building player confidence</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-accordion">
+                    <button class="team-accordion-button" data-team="u9" aria-expanded="false">
+                        <span class="jersey-number">9</span>
+                        <span class="team-heading">
+                            <h3>Under 9</h3>
+                            <span class="team-sub">Introduction to soccer basics</span>
+                        </span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="team-accordion-content" id="u9">
+                        <p>Early introduction to soccer fundamentals, teamwork, and play.</p>
+                        <ul class="team-details">
+                            <li>Introduction to soccer basics</li>
+                            <li>Ball awareness &amp; handling</li>
+                            <li>Teamwork introduction</li>
+                            <li>Fun &amp; enjoyment first</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section class="fkf-section" id="competitions">
-            <div class="section-heading"><span class="section-tag">2026 SEASON</span><h2>FKF Competition</h2><p>Young City Academy — U15 Match Centre</p></div>
-            <div class="fkf-hero"><div class="fkf-hero-content"><span class="competition-label">🏆 FKF YOUTH LEAGUE</span><h3>Zone A</h3><p>Follow Young City's results, league position, performances and goal scorers.</p></div><div class="fkf-badge"><span>FKF</span><small>U15</small></div></div>
-            <div class="fkf-stat-grid"><div class="fkf-stat"><span>Matches</span><strong>3</strong><small>Played</small></div><div class="fkf-stat"><span>Wins</span><strong>1</strong><small>50% win rate</small></div><div class="fkf-stat"><span>Points</span><strong>7</strong><small>League points</small></div><div class="fkf-stat"><span>Goal Difference</span><strong>+5</strong><small> scored 7 • 2 conceded</small></div></div>
-            <div class="fkf-content-grid"><div class="fkf-card"><div class="fkf-card-header"><div><span class="mini-label">STANDINGS</span><h3>FKF Youth League</h3></div><span class="zone-label">ZONE A</span></div><div class="league-table"><div class="league-row league-header"><span>Wins</span><span>Draws</span><span>Points</span></div><div class="league-row first-place"><strong>2</strong><strong>1</strong><strong>7</strong></div></div><div class="table-date">Table shown dated 29/07/2026</div></div><div class="fkf-card"><div class="fkf-card-header"><div><span class="mini-label">PERFORMANCE</span><h3>Young City Record</h3></div><span class="form-badge">1 WIN</span></div><div class="record-box"><div class="record-item"><span>Played</span><strong>2</strong></div><div class="record-item"><span>Wins</span><strong>1</strong></div><div class="record-item"><span>Draws</span><strong>1</strong></div><div class="record-item"><span>Losses</span><strong>0</strong></div><div class="record-item"><span>Goals For</span><strong>7</strong></div><div class="record-item"><span>Goals Against</span><strong>2</strong></div></div><div class="goal-difference"><span>Goal Difference</span><strong>+5</strong></div></div></div>
+        <section class="block fkf" id="competitions">
+            <div class="wrap section-heading">
+                <span class="section-tag">2026 Season</span>
+                <h2>FKF Competition</h2>
+                <p>Young City Academy — U15 Match Centre</p>
+            </div>
+
+            <div class="fkf-hero">
+                <div class="fkf-hero-content">
+                    <span class="competition-label">🏆 FKF Youth League</span>
+                    <h3>Zone A</h3>
+                    <p>Follow Young City's results, league position, performances and goal scorers.</p>
+                </div>
+                <div class="fkf-badge"><span>FKF</span><small>U15</small></div>
+            </div>
+
+            <div class="fkf-stat-grid">
+                <div class="fkf-stat"><span>Matches</span><strong>3</strong><small>Played</small></div>
+                <div class="fkf-stat"><span>Wins</span><strong>1</strong><small>50% win rate</small></div>
+                <div class="fkf-stat"><span>Points</span><strong>7</strong><small>League points</small></div>
+                <div class="fkf-stat"><span>Goal Difference</span><strong>+5</strong><small>Scored 7 · Conceded 2</small></div>
+            </div>
+
+            <div class="fkf-content-grid">
+                <div class="fkf-card">
+                    <div class="fkf-card-header">
+                        <div><span class="mini-label">Standings</span><h3>FKF Youth League</h3></div>
+                        <span class="zone-label">Zone A</span>
+                    </div>
+                    <div class="league-table">
+                        <div class="league-row league-header"><span>Wins</span><span>Draws</span><span>Points</span></div>
+                        <div class="league-row first-place"><strong>2</strong><strong>1</strong><strong>7</strong></div>
+                    </div>
+                    <div class="table-date">Table shown dated 29/07/2026</div>
+                </div>
+
+                <div class="fkf-card">
+                    <div class="fkf-card-header">
+                        <div><span class="mini-label">Performance</span><h3>Young City Record</h3></div>
+                        <span class="form-badge">1 Win</span>
+                    </div>
+                    <div class="record-box">
+                        <div class="record-item"><span>Played</span><strong>2</strong></div>
+                        <div class="record-item"><span>Wins</span><strong>1</strong></div>
+                        <div class="record-item"><span>Draws</span><strong>1</strong></div>
+                        <div class="record-item"><span>Losses</span><strong>0</strong></div>
+                        <div class="record-item"><span>Goals For</span><strong>7</strong></div>
+                        <div class="record-item"><span>Goals Against</span><strong>2</strong></div>
+                    </div>
+                    <div class="goal-difference"><span>Goal Difference</span><strong>+5</strong></div>
+                </div>
+            </div>
         </section>
 
-        <section class="gallery-section" id="gallery"><div class="section-heading"><h2>U13 NAICUP</h2><p>Highlights and memories from Young City Academy's U13 NAICUP tournament.</p></div><div class="gallery-grid"><figure class="gallery-card"><img src="u13-naicup-1.jpg" alt="Young City Academy players celebrating with their tournament trophy" loading="lazy"><figcaption>Trophy Celebration</figcaption></figure><figure class="gallery-card"><img src="u13-naicup-2.jpg" alt="Young City Academy players wearing medals at the tournament" loading="lazy"><figcaption>Medal Moments</figcaption></figure><figure class="gallery-card"><img src="u13-naicup-3.jpg" alt="Young City Academy player proudly holding the tournament trophy" loading="lazy"><figcaption>Champions</figcaption></figure><figure class="gallery-card"><img src="u13-naicup-4..jpg" alt="Young City Academy players celebrating at the U13 NAICUP tournament" loading="lazy"><figcaption>Tournament Memories</figcaption></figure></div></section>
+        <section class="block gallery" id="gallery">
+            <div class="wrap section-heading">
+                <span class="section-tag">Tournament Wins</span>
+                <h2>U13 NAICUP</h2>
+                <p>Highlights and memories from Young City Academy's U13 NAICUP tournament.</p>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-card">
+                    <img src="u13-naicup-1.jpg" alt="Young City Academy players celebrating with their tournament trophy" loading="lazy">
+                    <figcaption>Trophy Celebration</figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="u13-naicup-2.jpg" alt="Young City Academy players wearing medals at the tournament" loading="lazy">
+                    <figcaption>Medal Moments</figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="u13-naicup-3.jpg" alt="Young City Academy player proudly holding the tournament trophy" loading="lazy">
+                    <figcaption>Champions</figcaption>
+                </figure>
+                <figure class="gallery-card">
+                    <img src="u13-naicup-4.jpg" alt="Young City Academy players celebrating at the U13 NAICUP tournament" loading="lazy">
+                    <figcaption>Tournament Memories</figcaption>
+                </figure>
+            </div>
+        </section>
 
-        <section class="contact-section" id="contact"><div class="section-heading"><h2>Contact</h2><p>Ready to get started? Reach out to us by phone.</p></div><div class="contact-list"><p>Head Coach: <strong>Dickson Amiugasha</strong></p><p>Call us at:</p><ul><li><strong>+254 706 830 987</strong></li><li><strong>+254 743 624 768</strong></li></ul></div></section>
+        <section class="block contact" id="contact">
+            <div class="wrap section-heading">
+                <span class="section-tag">Get In Touch</span>
+                <h2>Contact</h2>
+                <p>Ready to get started? Reach out to us by phone.</p>
+            </div>
+            <div class="contact-card">
+                <div>
+                    <h3>Dickson Amiugasha</h3>
+                    <p>Head Coach, Young City Academy</p>
+                </div>
+                <div class="contact-phones">
+                    <a href="tel:+254706830987">+254 706 830 987</a>
+                    <a href="tel:+254743624768">+254 743 624 768</a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer><p>© 2026 Young City Academy. Building confident players, one practice at a time.</p></footer>
+
+    <footer>
+        <p>© 2026 Young City Academy. Building confident players, one practice at a time.</p>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
