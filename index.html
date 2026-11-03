@@ -23,8 +23,8 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#category">Teams</a></li>
                 <li><a href="#training">Training</a></li>
-                <li><a href="#competitions">FKF</a></li>
-                <li><a href="results.html">Results</a></li>
+                <li><a href="#competitions">FKF League</a></li>
+                <li><a href="results.html">Tournaments</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -48,12 +48,12 @@
                 <span>LATEST &nbsp;<b>U11</b> 9–1 FC Kaizen</span>
                 <span><b>U13</b> 4–0 Kick to Victory</span>
                 <span><b>U9</b> 4–0 Rongai Soccer</span>
-                <span>FKF ZONE A &nbsp;<b>7 PTS</b> from 3 played</span>
+                <span>FKF U15 ZONE A &nbsp;<b>20 PTS</b> from 10 played</span>
                 <span>U13 NAICUP &nbsp;<b>CHAMPIONS</b></span>
                 <span>LATEST &nbsp;<b>U11</b> 9–1 FC Kaizen</span>
                 <span><b>U13</b> 4–0 Kick to Victory</span>
                 <span><b>U9</b> 4–0 Rongai Soccer</span>
-                <span>FKF ZONE A &nbsp;<b>7 PTS</b> from 3 played</span>
+                <span>FKF U15 ZONE A &nbsp;<b>20 PTS</b> from 10 played</span>
                 <span>U13 NAICUP &nbsp;<b>CHAMPIONS</b></span>
             </div>
         </div>
@@ -197,7 +197,7 @@
                 <div class="schedule-card">
                     <div class="schedule-day">Sunday</div>
                     <div class="schedule-time">Match Day</div>
-                    <p><b>FKF league fixture.</b> If the match is cancelled, training runs instead at the same time as Saturday (2–4 PM).</p>
+                    <p><b>FKF League fixture.</b> If the match is cancelled, training runs instead at the same time as Saturday (2–4 PM).</p>
                 </div>
                 <div class="schedule-card">
                     <div class="schedule-day">School Holidays</div>
@@ -215,58 +215,56 @@
             </div>
         </section>
 
-        <section class="block fkf" id="competitions">
+        <section class="block fkf" id="competitions" data-competition-id="fkf">
             <div class="wrap section-heading">
                 <span class="section-tag">2026 Season</span>
-                <h2>FKF Competition</h2>
-                <p>Young City Academy — U15 Match Centre</p>
+                <h2>FKF League</h2>
+                <p>Young City Academy in the Football Kenya Federation (FKF) League — U15 and U13 team updates</p>
             </div>
 
             <div class="fkf-hero">
                 <div class="fkf-hero-content">
-                    <span class="competition-label">🏆 FKF Youth League</span>
-                    <h3>Zone A</h3>
-                    <p>Follow Young City's results, league position, performances and goal scorers.</p>
+                    <span class="competition-label">🏆 Football Kenya Federation (FKF) League</span>
+                    <h3>U15 &amp; U13 Teams</h3>
+                    <p>Follow both Young City squads in the Football Kenya Federation (FKF) League. Fixtures and standings will be updated here as they are confirmed.</p>
                 </div>
-                <div class="fkf-badge"><span>FKF</span><small>U15</small></div>
+                <div class="fkf-badge"><span>FKF</span><small>U15 · U13</small></div>
             </div>
 
-            <div class="fkf-stat-grid">
-                <div class="fkf-stat"><span>Matches</span><strong>6</strong><small>Played</small></div>
-                <div class="fkf-stat"><span>Wins</span><strong>4</strong><small>75% win rate</small></div>
-                <div class="fkf-stat"><span>Points</span><strong>14</strong><small>League points</small></div>
-                <div class="fkf-stat"><span>Goal Difference</span><strong>+10</strong><small>Scored 11 · Conceded 2</small></div>
-            </div>
-
-            <div class="fkf-content-grid">
-                <div class="fkf-card">
+            <div class="fkf-squad-grid">
+                <article class="fkf-squad-card">
                     <div class="fkf-card-header">
-                        <div><span class="mini-label">Standings</span><h3>FKF Youth League</h3></div>
-                        <span class="zone-label">Zone A</span>
+                        <div><span class="mini-label">Young City Academy</span><h3>Under 15</h3></div>
+                        <span class="zone-label" data-competition-stat="zone">Zone A</span>
                     </div>
-                    <div class="league-table">
-                        <div class="league-row league-header"><span>Wins</span><span>Draws</span><span>Points</span></div>
-                        <div class="league-row first-place"><strong>4</strong><strong>2</strong><strong>14</strong></div>
+                    <p class="fkf-squad-description">Football Kenya Federation (FKF) League season record.</p>
+                    <div class="fkf-squad-stats">
+                        <div><span>Played</span><strong data-competition-stat="played">10</strong></div>
+                        <div><span>Wins</span><strong data-competition-stat="wins">5</strong></div>
+                        <div><span>Draws</span><strong data-competition-stat="draws">5</strong></div>
+                        <div><span>Points</span><strong data-competition-stat="points">20</strong></div>
                     </div>
-                    <div class="table-date">Table shown dated 29/07/2026</div>
-                </div>
+                    <div class="fkf-squad-footer">
+                        <span>Losses <strong data-competition-stat="losses">0</strong></span>
+                        <span>Goals <strong><span data-competition-stat="goalsFor">11</span> for · <span data-competition-stat="goalsAgainst">2</span> against</strong></span>
+                        <span>Goal difference <strong>+<span data-competition-stat="goalDifference">9</span></strong></span>
+                    </div>
+                    <p class="table-date">Table shown dated <span data-competition-stat="date">29/07/2026</span></p>
+                </article>
 
-                <div class="fkf-card">
+                <article class="fkf-squad-card">
                     <div class="fkf-card-header">
-                        <div><span class="mini-label">Performance</span><h3>Young City Record</h3></div>
-                        <span class="form-badge">3Win</span>
+                        <div><span class="mini-label">Young City Academy</span><h3>Under 13</h3></div>
+                        <span class="form-badge">Fixtures pending</span>
                     </div>
-                    <div class="record-box">
-                        <div class="record-item"><span>Played</span><strong>6</strong></div>
-                        <div class="record-item"><span>Wins</span><strong>4</strong></div>
-                        <div class="record-item"><span>Draws</span><strong>2</strong></div>
-                        <div class="record-item"><span>Losses</span><strong>0</strong></div>
-                        <div class="record-item"><span>Goals For</span><strong>11</strong></div>
-                        <div class="record-item"><span>Goals Against</span><strong>2</strong></div>
+                    <p class="fkf-squad-description">Our U13 squad is preparing for the FKF League.</p>
+                    <div class="fkf-pending-panel">
+                        <strong>Fixtures and standings coming soon</strong>
+                        <span>Match details will be added when confirmed.</span>
                     </div>
-                    <div class="goal-difference"><span>Goal Difference</span><strong>+10</strong></div>
-                </div>
+                </article>
             </div>
+            <a class="tournament-inline-link" href="cfk-tournament.html">Explore the separate CFK Tournament <span aria-hidden="true">→</span></a>
         </section>
 
         <section class="block gallery" id="gallery">
@@ -289,7 +287,7 @@
                     <figcaption>Champions</figcaption>
                 </figure>
                 <figure class="gallery-card">
-                    <img src="u13-naicup-4.jpg" alt="Young City Academy players celebrating at the U13 NAICUP tournament" loading="lazy">
+                    <img src="u13-naicup-4..jpg" alt="Young City Academy players celebrating at the U13 NAICUP tournament" loading="lazy">
                     <figcaption>Tournament Memories</figcaption>
                 </figure>
             </div>
@@ -318,6 +316,7 @@
         <p>© 2026 Young City Academy. Building confident players, one practice at a time.</p>
     </footer>
 
+    <script src="js/competition-data.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

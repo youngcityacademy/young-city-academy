@@ -1,24 +1,22 @@
 /* =========================================================
-   YOUNG CITY ACADEMY — 2026 Redesign
-   Concept: matchday scoreboard meets grassroots pitch.
-   Palette pulled from turf, chalk lines and a Nairobi sun,
-   not from a generic dark/acid-green sports-tech look.
+   YOUNG CITY ACADEMY — 2026 Matchday Redesign
+   Black-and-red jersey palette with bold matchday details.
    ========================================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=JetBrains+Mono:wght@500;700&display=swap');
 
 :root {
-    --pitch:        #1B5E3C;   /* deep grass green — primary */
-    --pitch-light:  #2C7A4F;
-    --pitch-dark:   #0E2318;   /* pitch at dusk — dark sections */
-    --chalk:        #F6F3E9;   /* chalk-lined pitch — page background */
-    --chalk-dim:    #ECE7D8;
-    --gold:         #F2A93B;   /* touchline sun / kit trim — accent */
-    --gold-dark:    #D9922A;
-    --ink:          #13241B;   /* near-black green — body text */
-    --grey:         #656b60;   /* muted secondary text */
-    --line:         #D9D2BC;   /* hairline rule, warm chalk-grey */
-    --brick:        #A8452E;   /* used only for losses, sparingly */
+    --pitch:        #D7193F;
+    --pitch-light:  #EF233C;
+    --pitch-dark:   #0B0B0D;
+    --chalk:        #F7F7F7;
+    --chalk-dim:    #EAEAEA;
+    --gold:         #F02A46;
+    --gold-dark:    #BD142E;
+    --ink:          #151515;
+    --grey:         #626262;
+    --line:         #D6D6D6;
+    --brick:        #8F1027;
 
     --container: 1240px;
     --pad: 96px;
@@ -61,7 +59,7 @@ header {
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 1000;
-    background: rgba(246, 243, 233, 0.92);
+    background: rgba(247, 247, 247, 0.94);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
 }
@@ -136,8 +134,10 @@ header {
     position: relative;
     overflow: hidden;
     background:
-        linear-gradient(180deg, rgba(14,35,24,0.55) 0%, rgba(14,35,24,0.88) 78%, var(--pitch-dark) 100%),
-        url("../hero.jpg") center/cover no-repeat;
+        linear-gradient(180deg, rgba(8,8,10,0.25) 0%, rgba(8,8,10,0.78) 68%, var(--pitch-dark) 100%),
+        repeating-linear-gradient(115deg, transparent 0 54px, rgba(215,25,63,0.16) 54px 58px, transparent 58px 112px),
+        radial-gradient(ellipse at 78% 24%, rgba(215,25,63,0.48), transparent 38%),
+        linear-gradient(115deg, #090909 0%, #171719 58%, #790d25 100%);
     background-color: var(--pitch-dark);
     color: var(--chalk);
 }
@@ -148,7 +148,7 @@ header {
     display: inline-block;
     margin-bottom: 20px;
     padding: 6px 12px;
-    border: 1px solid rgba(246,243,233,0.35);
+    border: 1px solid rgba(247,247,247,0.35);
     color: var(--gold);
     font-family: var(--font-mono);
     font-size: 11px;
@@ -169,7 +169,7 @@ header {
 .hero-content > p:not(.eyebrow) {
     max-width: 560px;
     margin-top: 26px;
-    color: rgba(246,243,233,0.82);
+    color: rgba(247,247,247,0.82);
     font-size: 18px;
 }
 
@@ -195,7 +195,7 @@ header {
 .btn-outline {
     background: transparent;
     color: var(--chalk);
-    border: 1px solid rgba(246,243,233,0.6);
+    border: 1px solid rgba(247,247,247,0.6);
 }
 
 .btn-outline:hover { color: var(--pitch-dark); background: var(--chalk); }
@@ -203,7 +203,7 @@ header {
 /* ---- Matchday ticker (signature strip under hero) ---- */
 
 .ticker {
-    border-top: 1px solid rgba(246,243,233,0.15);
+    border-top: 1px solid rgba(247,247,247,0.15);
     overflow: hidden;
     background: var(--pitch-dark);
 }
@@ -225,7 +225,7 @@ header {
     letter-spacing: 0.5px;
     color: var(--chalk-dim);
     white-space: nowrap;
-    border-right: 1px solid rgba(246,243,233,0.15);
+    border-right: 1px solid rgba(247,247,247,0.15);
 }
 
 .ticker-track span b { color: var(--gold); }
@@ -480,7 +480,7 @@ section.block { padding: var(--pad) 0; }
     margin-bottom: 10px;
 }
 
-.location-info p { color: #C7D0C8; font-size: 14px; max-width: 480px; line-height: 1.7; }
+.location-info p { color: #D0D0D0; font-size: 14px; max-width: 480px; line-height: 1.7; }
 
 .location-btn {
     display: inline-flex;
@@ -500,11 +500,11 @@ section.block { padding: var(--pad) 0; }
 .location-btn:hover { transform: translateY(-3px); }
 
 /* =========================
-   FKF COMPETITION — dark scoreboard section
+   CFK COMPETITION — dark scoreboard section
    ========================= */
 
 .fkf { background: var(--pitch-dark); color: var(--chalk); }
-.fkf .section-heading p { color: #A9B6AC; }
+.fkf .section-heading p { color: #B8B8B8; }
 .fkf .section-tag { color: var(--gold); }
 
 .fkf-hero {
@@ -513,14 +513,14 @@ section.block { padding: var(--pad) 0; }
     min-height: 280px;
     padding: 40px;
     background:
-        linear-gradient(90deg, rgba(14,35,24,0.88), rgba(14,35,24,0.25)),
-        url("../fkf.jpg") center/cover no-repeat;
+        repeating-linear-gradient(115deg, transparent 0 54px, rgba(215,25,63,0.18) 54px 58px, transparent 58px 112px),
+        linear-gradient(115deg, #111113 0%, #1B1B1E 56%, #8F1027 100%);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 24px;
-    border: 1px solid rgba(246,243,233,0.12);
+    border: 1px solid rgba(247,247,247,0.16);
 }
 
 .competition-label {
@@ -539,7 +539,7 @@ section.block { padding: var(--pad) 0; }
     text-transform: uppercase;
 }
 
-.fkf-hero p { max-width: 520px; margin-top: 14px; color: #C7D0C8; font-size: 15px; }
+.fkf-hero p { max-width: 520px; margin-top: 14px; color: #D0D0D0; font-size: 15px; }
 
 .fkf-badge {
     width: 92px; height: 92px;
@@ -558,20 +558,20 @@ section.block { padding: var(--pad) 0; }
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border-left: 1px solid rgba(246,243,233,0.14);
-    border-top: 1px solid rgba(246,243,233,0.14);
+    border-left: 1px solid rgba(247,247,247,0.14);
+    border-top: 1px solid rgba(247,247,247,0.14);
     margin-top: 1px;
 }
 
 .fkf-stat {
     padding: 28px;
-    border-right: 1px solid rgba(246,243,233,0.14);
-    border-bottom: 1px solid rgba(246,243,233,0.14);
+    border-right: 1px solid rgba(247,247,247,0.14);
+    border-bottom: 1px solid rgba(247,247,247,0.14);
 }
 
 .fkf-stat span, .fkf-stat small {
     display: block;
-    color: #94A092;
+    color: #A8A8A8;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -592,11 +592,11 @@ section.block { padding: var(--pad) 0; }
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1px;
-    background: rgba(246,243,233,0.14);
+    background: rgba(247,247,247,0.14);
     margin-top: 1px;
 }
 
-.fkf-card { background: #122A1C; padding: 32px; }
+.fkf-card { background: #171719; padding: 32px; }
 
 .fkf-card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
 
@@ -606,27 +606,27 @@ section.block { padding: var(--pad) 0; }
 
 .zone-label, .form-badge {
     padding: 6px 10px;
-    border: 1px solid rgba(246,243,233,0.35);
+    border: 1px solid rgba(247,247,247,0.35);
     font-size: 10px;
     font-weight: 800;
     letter-spacing: 0.5px;
 }
 
 .league-table { margin-top: 32px; }
-.league-row { display: grid; grid-template-columns: repeat(3, 1fr); padding: 14px; border-bottom: 1px solid rgba(246,243,233,0.12); }
-.league-header { color: #8C988A; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
+.league-row { display: grid; grid-template-columns: repeat(3, 1fr); padding: 14px; border-bottom: 1px solid rgba(247,247,247,0.12); }
+.league-header { color: #A0A0A0; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; }
 .first-place { font-family: var(--font-mono); font-size: 26px; }
-.table-date { margin-top: 16px; color: #7C887A; font-size: 11px; }
+.table-date { margin-top: 16px; color: #999; font-size: 11px; }
 
 .record-box {
     margin-top: 28px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid rgba(246,243,233,0.12);
-    border-left: 1px solid rgba(246,243,233,0.12);
+    border-top: 1px solid rgba(247,247,247,0.12);
+    border-left: 1px solid rgba(247,247,247,0.12);
 }
-.record-item { padding: 18px; border-right: 1px solid rgba(246,243,233,0.12); border-bottom: 1px solid rgba(246,243,233,0.12); }
-.record-item span { display: block; color: #8C988A; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+.record-item { padding: 18px; border-right: 1px solid rgba(247,247,247,0.12); border-bottom: 1px solid rgba(247,247,247,0.12); }
+.record-item span { display: block; color: #A0A0A0; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
 .record-item strong { display: block; margin-top: 5px; font-family: var(--font-mono); font-size: 25px; }
 
 .goal-difference {
@@ -639,6 +639,100 @@ section.block { padding: var(--pad) 0; }
     align-items: center;
     font-weight: 800;
     font-family: var(--font-mono);
+}
+
+.fkf-squad-grid {
+    width: min(calc(100% - 48px), var(--container));
+    margin: 1px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    background: rgba(247,247,247,0.14);
+}
+
+.fkf-squad-card {
+    min-width: 0;
+    padding: 32px;
+    background: #171719;
+}
+
+.fkf-squad-card h3 {
+    margin-top: 6px;
+    font-family: var(--font-display);
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.fkf-squad-description {
+    margin-top: 18px;
+    color: #B8B8B8;
+    font-size: 14px;
+}
+
+.fkf-squad-stats {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid rgba(247,247,247,0.12);
+    border-left: 1px solid rgba(247,247,247,0.12);
+}
+
+.fkf-squad-stats div {
+    padding: 16px 10px;
+    border-right: 1px solid rgba(247,247,247,0.12);
+    border-bottom: 1px solid rgba(247,247,247,0.12);
+}
+
+.fkf-squad-stats span,
+.fkf-squad-footer span {
+    display: block;
+    color: #A8A8A8;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.fkf-squad-stats strong {
+    display: block;
+    margin-top: 6px;
+    font-family: var(--font-mono);
+    font-size: 24px;
+}
+
+.fkf-squad-footer {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.fkf-squad-footer strong {
+    display: block;
+    margin-top: 4px;
+    color: var(--chalk);
+    font-size: 12px;
+}
+
+.fkf-pending-panel {
+    margin-top: 24px;
+    padding: 22px;
+    border: 1px dashed rgba(247,247,247,0.28);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.fkf-pending-panel strong {
+    color: var(--gold);
+    font-family: var(--font-mono);
+    font-size: 13px;
+}
+
+.fkf-pending-panel span {
+    color: #B8B8B8;
+    font-size: 13px;
 }
 
 /* =========================
@@ -659,7 +753,7 @@ section.block { padding: var(--pad) 0; }
     position: relative;
     background: var(--pitch-dark);
     padding: 10px 10px 14px;
-    box-shadow: 0 6px 16px rgba(19,36,27,0.14);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.14);
     transition: transform 0.25s ease;
 }
 .gallery-card:nth-child(odd) { transform: rotate(-1.2deg); }
@@ -699,7 +793,7 @@ section.block { padding: var(--pad) 0; }
 }
 
 .contact-card h3 { font-family: var(--font-display); font-size: clamp(24px, 3vw, 34px); text-transform: uppercase; }
-.contact-card p { color: #CFE0D3; margin-top: 8px; font-size: 14px; }
+.contact-card p { color: #F0C8CF; margin-top: 8px; font-size: 14px; }
 
 .contact-phones { display: flex; flex-direction: column; gap: 10px; }
 .contact-phones a {
@@ -719,7 +813,7 @@ section.block { padding: var(--pad) 0; }
 footer {
     padding: 26px 24px;
     background: var(--pitch-dark);
-    color: #7C887A;
+    color: #999;
     text-align: center;
     font-size: 12px;
 }
@@ -734,13 +828,142 @@ footer {
     display: flex;
     align-items: flex-end;
     background:
-        linear-gradient(180deg, rgba(14,35,24,0.55) 0%, rgba(14,35,24,0.92) 85%),
-        url("../hero.jpg") center/cover no-repeat;
+        linear-gradient(180deg, rgba(8,8,10,0.22) 0%, rgba(8,8,10,0.92) 85%),
+        repeating-linear-gradient(115deg, transparent 0 54px, rgba(215,25,63,0.16) 54px 58px, transparent 58px 112px),
+        radial-gradient(ellipse at 78% 24%, rgba(215,25,63,0.42), transparent 38%),
+        linear-gradient(115deg, #090909 0%, #171719 58%, #790d25 100%);
     background-color: var(--pitch-dark);
     color: var(--chalk);
 }
 .results-hero .hero-content { padding-bottom: 24px; }
 .results-hero h1 { font-family: var(--font-display); font-size: clamp(44px, 8vw, 96px); line-height: 0.9; text-transform: uppercase; }
+
+.tournament-back-link { margin-top: 26px; }
+
+.tournaments-section {
+    padding: var(--pad) 24px;
+    background: var(--chalk);
+}
+
+.tournaments-intro,
+.tournament-grid {
+    width: min(100%, var(--container));
+    margin-inline: auto;
+}
+
+.tournaments-intro { margin-bottom: 36px; }
+.tournaments-intro h2,
+.fkf-page-intro h2 {
+    font-family: var(--font-display);
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 0.95;
+    text-transform: uppercase;
+}
+
+.tournaments-intro p,
+.fkf-page-intro p {
+    max-width: 620px;
+    margin-top: 14px;
+    color: var(--grey);
+}
+
+.tournament-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.tournament-card {
+    min-height: 330px;
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--chalk);
+    background:
+        repeating-linear-gradient(115deg, transparent 0 52px, rgba(215,25,63,0.12) 52px 56px, transparent 56px 108px),
+        linear-gradient(145deg, #101012, #85112a);
+    border-bottom: 5px solid var(--pitch);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tournament-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.22);
+}
+
+.fkf-tournament-card { background: linear-gradient(145deg, #101012, #A5112A); }
+
+.tournament-card-label,
+.tournament-card-age {
+    color: var(--gold);
+    font-family: var(--font-mono);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.tournament-card-age { margin-top: 22px; color: #D0D0D0; }
+
+.tournament-card h3 {
+    margin-top: 8px;
+    font-family: var(--font-display);
+    font-size: clamp(38px, 5vw, 58px);
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.tournament-card p {
+    max-width: 420px;
+    margin-top: 14px;
+    color: #D0D0D0;
+    font-size: 14px;
+}
+
+.tournament-card-link {
+    margin-top: auto;
+    padding-top: 26px;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.fkf-page-hero { background-color: var(--pitch-dark); }
+
+.fkf-page-section {
+    padding: var(--pad) 24px;
+    background: var(--pitch-dark);
+    color: var(--chalk);
+}
+
+.fkf-page-intro,
+.fkf-page-squad-grid {
+    width: min(100%, var(--container));
+    margin-inline: auto;
+}
+
+.fkf-page-intro { margin-bottom: 36px; }
+.fkf-page-intro .section-tag { color: var(--gold); }
+.fkf-page-intro p { color: #B8B8B8; }
+.fkf-page-squad-grid { margin-top: 0; }
+.tournament-inline-link {
+    width: fit-content;
+    margin: 28px auto 0;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background: var(--gold);
+    color: var(--pitch-dark);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+.tournament-inline-link:hover { background: var(--chalk); }
 
 .results-section { background: var(--chalk); padding: var(--pad) 0; }
 .results-container { width: min(calc(100% - 48px), var(--container)); margin-inline: auto; display: flex; flex-direction: column; gap: 56px; }
@@ -850,6 +1073,8 @@ footer {
 
     .fkf-stat-grid { grid-template-columns: 1fr 1fr; }
     .fkf-content-grid { grid-template-columns: 1fr; }
+    .fkf-squad-grid { grid-template-columns: 1fr; }
+    .tournament-grid { grid-template-columns: 1fr; }
 
     .gallery-grid { grid-template-columns: 1fr 1fr; }
 
@@ -874,6 +1099,10 @@ footer {
     .team-accordion-button { padding: 18px; gap: 16px; }
     .jersey-number { width: 54px; height: 54px; font-size: 22px; }
     .team-accordion-content { padding-left: 18px; padding-right: 18px; }
+
+    .fkf-squad-card { padding: 24px 18px; }
+    .fkf-squad-stats div { padding: 14px 8px; }
+    .fkf-squad-stats strong { font-size: 20px; }
 
     .gallery-grid { grid-template-columns: 1fr; }
 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFK Tournament - Young City Academy</title>
+    <meta name="description" content="CFK Tournament updates, fixtures and results for Young City Academy U15 and U13 teams.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="index.html">
+                <img src="images/LOGO.jpg" alt="Young City Academy crest">
+                <span class="logo-text">Young City</span>
+            </a>
+            <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#category">Teams</a></li>
+                <li><a href="index.html#competitions">FKF League</a></li>
+                <li><a href="results.html">Tournaments</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="results-hero fkf-page-hero">
+            <div class="hero-content">
+                <p class="eyebrow">CFK Tournament · In Progress</p>
+                <h1>CFK<br>Tournament</h1>
+                <p>Follow our Under 15 and Under 13 teams in the CFK Tournament.</p>
+                <a class="btn tournament-back-link" href="results.html">All Tournaments</a>
+            </div>
+        </section>
+
+        <section class="fkf-page-section" aria-labelledby="cfk-teams-heading" data-competition-id="cfk">
+            <div class="fkf-page-intro">
+                <span class="section-tag">Two Academy Teams</span>
+                <h2 id="cfk-teams-heading">CFK Tournament Updates</h2>
+                <p>The tournament is in progress. Match details and results will appear here after verification.</p>
+            </div>
+
+            <div class="fkf-squad-grid fkf-page-squad-grid">
+                <article class="fkf-squad-card">
+                    <div class="fkf-card-header">
+                        <div><span class="mini-label">CFK Tournament</span><h3>Under 15</h3></div>
+                        <span class="zone-label">In progress</span>
+                    </div>
+                    <p class="fkf-squad-description">No verified U15 CFK match record is available in the project yet.</p>
+                </article>
+
+                <article class="fkf-squad-card">
+                    <div class="fkf-card-header">
+                        <div><span class="mini-label">CFK Tournament</span><h3>Under 13</h3></div>
+                        <span class="form-badge">Fixtures pending</span>
+                    </div>
+                    <p class="fkf-squad-description">No verified U13 CFK fixture or result is available in the project yet.</p>
+                    <div class="fkf-pending-panel">
+                        <strong>U13 fixture and result details need verification</strong>
+                        <span>Match details will be added when confirmed.</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="fkf-page-intro">
+                <h2>CFK Match Results</h2>
+            </div>
+            <div class="results-matches" data-match-list="cfk" aria-live="polite"></div>
+            <div class="fkf-page-intro">
+                <h2>CFK Fixtures</h2>
+            </div>
+            <div class="fkf-squad-grid" data-fixture-list="cfk"></div>
+
+            <a class="tournament-inline-link" href="nai-cup.html">See NAI Cup results <span aria-hidden="true">→</span></a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Young City Academy. Building confident players, one practice at a time.</p>
+    </footer>
+
+    <script src="js/competition-data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
